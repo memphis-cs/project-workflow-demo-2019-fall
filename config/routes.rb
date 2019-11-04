@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'authors', to: 'pages#authors', as: 'authors'
   get 'history', to: 'pages#history', as: 'history'
   get 'home', to:'pages#home', as: 'home'
   root to: redirect('/home', status: 302)
