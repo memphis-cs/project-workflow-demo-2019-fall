@@ -6,4 +6,10 @@ class PagesController < ApplicationController
         end
     end
 
+    def authors
+        respond_to do |format|
+            format.html { render :authors }
+        end
+    end
+
 end
