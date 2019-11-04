@@ -12,4 +12,10 @@ class PagesController < ApplicationController
         end
     end
 
+    def history
+        respond_to do |format|
+            format.html { render :history }
+        end
+    end
+
 end
